@@ -13,21 +13,20 @@
 
     <!-- 注册中心  -->
     <!--<dubbo:registry address="N/A"/>-->
-
     <dubbo:registry protocol="zookeeper" address="139.199.32.78:2181"/>
 
 
     <!--  协议   -->
     <dubbo:protocol name="dubbo" port="20880"/>
+    <!-- <dubbo:protocol name="hessian" port="8090" server="jetty"/>-->
 
-    <dubbo:protocol name="hessian" port="8090" server="jetty"/>
 
-
-    <!--  服务   -->
-    <dubbo:service interface="com.uu.husky.IOrderService"
-                   ref="orderService" protocol="dubbo,hessian"/>
+    <!--  服务   -->     <!-- protocol 协议用,分隔可以写多个-->
+    <dubbo:service interface="com.uu.husky.IOrderService" ref="orderService" protocol="dubbo" version="1.0"/>
+    <dubbo:service interface="com.uu.husky.IOrderService" ref="orderService2" protocol="dubbo" version="2.0"/>
 
     <!--Bean bean定义-->
     <bean id="orderService" class="com.uu.husky.OrderServiceImpl"/>
+    <bean id="orderService2" class="com.uu.husky.OrderServiceImpl2"/>
 
 </beans>
