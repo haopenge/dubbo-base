@@ -46,6 +46,12 @@
             <artifactId>jetty</artifactId>
             <version>6.1.26</version>
         </dependency>
+        <dependency>
+            <groupId>com.uu.husky</groupId>
+            <artifactId>dubbo-order-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
         <!-- =========================== hessian end =========================== -->
 
     </dependencies>

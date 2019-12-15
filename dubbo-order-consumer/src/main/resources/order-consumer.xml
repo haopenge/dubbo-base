@@ -8,7 +8,7 @@
     <dubbo:application name="order-provider" owner="husky"/>
 
 
-    <dubbo:registry protocol="zookeeper" address="139.199.32.78:2181" file="/resource/dubbo.txt"/>
+    <dubbo:registry protocol="zookeeper" address="111.229.30.86:2181" file="resource/dubbo.txt"/>
 
 
     <!--生成一个远程服务的调用代理-->

@@ -12,6 +12,7 @@
     <artifactId>dubbo-order-provider</artifactId>
 
     <dependencies>
+
         <dependency>
             <groupId>com.uu.husky</groupId>
             <artifactId>dubbo-order-api</artifactId>
